@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	user-select: none;
+	font-family: "Roboto", sans-serif;
+}
+
+body{
+	color: white;
+	background-color: #222;
+}
+
+.navbar{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	height: 120px;
+	width: 100vw;
+	background-color: #222; /*#a57c24*/
+	border-bottom: 3px solid white;
+	user-select: none;
+}
+
+.logo{
+	margin-left: 35px;
+}
+
+.logo img{
+	margin-top: 15px;
+	width: 250px;
+	height: 250px;
+}
+
+.paginas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 45px;
+}
+
+.paginas a{
+	margin: 15px;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	background: #222;
+	padding: 38px 10px;
+	border-bottom: 4.5px solid #222;
+	transition: all 200ms ease-in;
+}
+
+.paginas a:hover{
+	background: #3333;
+	color: yelllow;
+	border-bottom: 4.5px solid yellow;
+	text-shadow: 0 0 5px black;
+}
+
+.catalogo{
+	height: 950px;
+	width: 100vw;
+	background-image: linear-gradient(rgba(29, 29, 29, 0.6), rgba(29, 29, 29, 0.6)) ,url(./images/pastel1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 50px;
+	background-image: opacity(.1);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-shadow: 0 0 5px #222;
+	text-size: 20px;
+	user-select: none;
+}
+
+.catalogo h1{
+	color: #ffc506;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-top: 10vh;
+	margin-bottom: 5px;
+}
+
+.catalogo h3{
+	color: white;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.buttons{
+	margin: 20px 0;
+}
+
+.buttons button{
+	width: 150px;
+	height: 45px;
+	margin: 0 15px;
+	border-radius: 15px;
+	border: 3px solid #ffc506;
+	background-color: #ffc506;
+	color: #222;
+	text-shadow: 0 0 10px #222;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 300ms ease-in;
+}
+
+.buttons button:hover{
+	background-color: transparent;
+	border: 3px solid #ffc506;
+	color: #ffc506;
+}
+
+.sobre{
+	height: 400px;
+	width: 100vw;
+	background-color: #222;
+	border-bottom: 4px solid gray;
+	border-top: 4px solid gray;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.sobre img{
+	margin-right: 30px;
+	width: 222px;
+	height: 222px;
+	border-radius: 10px;
+	border: 2px solid gray;
+}
+
+span{
+	color: #ffc506;
+	font-size: 38px;
+	text-weight: 600;
+	text-transform: uppercase;
+}
+
+.sobre-content h2{
+	margin-top: 20px;
+	margin-left: 30px;
+	color: white;
+	font-size: 18px;
+	text-weight: 500;
+	text-transform: uppercase;
+}
+
+.container-cardapio{
+	height: 1000px;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #222;
+}
+
+.container-cardapio h1{
+	margin-top: 35px;
+	text-transform: uppercase;
+}
+
+.content-cardapio{
+	height: 90vh;
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.produto{
+	width: 300px;
+	height: 375px;
+	border-radius: 15px;
+	border: 5px solid white;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: #3333;
+}
+
+.produto img{
+	width: 90%;
+	margin-top: 15px;
+	height: 200px;
+	border-radius: 15px;
+	border: 2px solid white;
+}
+
+.produto h2{
+	color: white;
+	font-size: 23px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.produto h3{
+	margin-top: 10px;
+	color: white;
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+#valor{
+	font-size: 19px;
+	color: white;
+	text-shadow: 0 0 5px black;
+}
+
+.produto button{
+	margin-top: 10px;
+	width: 145px;
+	height: 35px;
+	background: #ffc506;
+	border: none;
+	border-radius: 10px;
+	color: black;
+	text-shadow: 0 0 5px #222;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 200ms ease-in;
+}
+
+
+.produto button:hover{
+	background: #222;
+	border: 3px solid #ffc506;
+	color: #ffc506;
+	text-shadow: 0 0 5px #222;
+	font-size: 18px;
+}
